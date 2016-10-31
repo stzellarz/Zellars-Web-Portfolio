@@ -1,0 +1,57 @@
+@@ -0,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stewart's Photo Gallery</title>
+    <link rel=stylesheet href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" >
+</head>
+<header>
+    <section class="NavigationBar">
+        <ul>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"onmouseout="normalsize(this)"><a href="index.html">Home</a></li>
+        <li class="active"  onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Pictures">Pictures</a></li>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)" ><a href="#Contact">Contact</a></li>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Order">Order</a></li>    
+        </ul>
+    </section>
+    </header>    
+<body>
+<div id = "large_picture_text">
+	Image Gallery
+	<div id="large_picture">
+	        <p id="large_picture_content"></p>
+	</div>
+        <div id = "image_gallery">
+        <img onmouseover= "swap(this)" onmouseout=normDiv() src="http://cache.umusic.com/_sites/kendricklamar.com/images/og.jpg" alt="Kendrick Lamar Portrait">
+        <img onmouseover= "swap(this)" onmouseout=normDiv() src="http://67.media.tumblr.com/dc21b2a9e35211c62d04fbf13b235304/tumblr_nqxm52lrrI1slocwzo1_1280.jpg" alt="We Gon Be Alright!">
+        <img onmouseover= "swap(this)" onmouseout=normDiv() src="https://images.rapgenius.com/1cdbf6a34fc23c7a658ee49e125a13f9.567x567x1.jpg" alt="U the Reason!">
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">    
+function swap(image) {             
+    var imagesrc=image.getAttribute("src");
+    document.getElementById("large_picture").style.backgroundImage = "url('"+ imagesrc + "')"; 
+    document.getElementById('large_picture_content').innerHTML = image.alt;
+    document.getElementById('large_picture').style.border="0px black dashed";
+    }
+function normDiv(){
+        document.getElementById('large_picture').style.backgroundImage ="";
+        document.getElementById('large_picture_content').innerHTML='';
+        document.getElementById('large_picture').style.border="5px dashed black";
+    }
+function enlarge(this_text){
+    this_text.style.fontSize="120%";
+    this_text.style.backgroundColor="grey";
+}
+function normalsize(this_text){
+    this_text.style.fontSize="100%";
+    this_text.style.backgroundColor="";
+
+}
+</script>
+    
+</html> 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stewart's Photo Gallery</title>
+    <link rel=stylesheet href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" >
+</head>
+<header>
+    <section class="NavigationBar">
+        <ul>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"onmouseout="normalsize(this)"><a href="index.html">Home</a></li>
+        <li class="active"  onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Pictures">Pictures</a></li>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)" ><a href="#Contact">Contact</a></li>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Order">Order</a></li>    
+        </ul>
+    </section>
+    </header>    
+<body>
+<footer>
+    <section class="NavigationBar">
+        <ul>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"onmouseout="normalsize(this)"><a href="index.html">Home</a></li>
+        <li class="active"  onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Pictures">Pictures</a></li>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)" ><a href="#Contact">Contact</a></li>
+        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Order">Order</a></li>    
+        </ul>
+    </section>
+    </footer>  
+</body>
+
+<script type="text/javascript">    
+function swap(image) {             
+    var imagesrc=image.getAttribute("src");
+    document.getElementById("large_picture").style.backgroundImage = "url('"+ imagesrc + "')"; 
+    document.getElementById('large_picture_content').innerHTML = image.alt;
+    document.getElementById('large_picture').style.border="0px black dashed";
+    }
+function normDiv(){
+        document.getElementById('large_picture').style.backgroundImage ="";
+        document.getElementById('large_picture_content').innerHTML='';
+        document.getElementById('large_picture').style.border="5px dashed black";
+    }
+function enlarge(this_text){
+    this_text.style.fontSize="120%";
+    this_text.style.backgroundColor="grey";
+}
+function normalsize(this_text){
+    this_text.style.fontSize="100%";
+    this_text.style.backgroundColor="";
+
+}
+</script>
+    
+</html> 

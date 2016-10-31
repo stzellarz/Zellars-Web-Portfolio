@@ -1,0 +1,113 @@
+/*Importing the font*/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html{
+ font-family: 'Courier New';
+}
+
+body{
+    background-color:gainsboro;
+}
+
+
+/*Navigation Bar Section*/
+.NavigationBar{
+    margin: 0 auto;
+    background-color:black;
+
+}
+
+.NavigationBar ul{
+    text-align:center;
+}
+
+.NavigationBar li{
+    display:inline-block;
+    width:20%;
+    font-size:1em;
+}
+
+.NavigationBar a{
+    color:white;
+    text-decoration: none;
+}
+
+.active:before {
+    content: "\2022  ";
+    color:white;
+    }
+
+/*End of Navigation Bar */
+
+
+/*Section */
+
+.Site p{
+max-width: 60%;
+margin: 0 auto;   
+text-align:center;
+overflow:scroll;
+}
+
+#bulldawg {
+    display:block;
+    margin: 0px 10px;;
+}
+
+#logo{
+    height:30%;
+    width:30%;
+    display:block;
+    margin:0px auto; 
+}
+
+
+/* Second page exclusively*/
+
+#large_picture_text{
+    text-align:center;
+    font-size:1.3em;   
+}
+
+#large_picture{
+        width: 50vw;
+        height: 50vw;
+        border:5px dashed black;
+        margin:10px auto;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        text-align: center;
+        background-size: 100%;
+        font-size:150%;
+        position:relative;
+        padding:0px;
+        
+    }
+
+#large_picture_content{
+        position:absolute;
+        bottom:0;
+        right:0;
+        left:0;
+        z-index: 1;
+        font-style: oblique;
+    }
+#image_gallery{
+     position:absolute;
+     width:100%;
+     height:100%
+}
+
+#image_gallery img{
+    margin:0 auto;
+    width:25%;
+}
+
+}
+
+/*
+* {
+background: #000 !important;
+color: #0f0 !important;
+outline: solid #f00 1px !important;
+} 
