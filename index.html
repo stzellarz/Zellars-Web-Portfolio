@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stewart's Web Page</title>
-    <link rel=stylesheet href="styles.css">
+    <title>Stewart's Welcome Page</title>
+    <link rel=stylesheet href="styles.css" type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" >
-</head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/jquery-live-preview.js"></script>
+        
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".livepreview").livePreview();
+            });
+        </script>
+</head>      
 <header>
-    <section class="NavigationBar">
-        <ul>
-        <li class="active" onmouseover="enlarge(this)" onmouseout="normalsize(this)"onmouseout="normalsize(this)"><a href="index.html">Home</a></li>
-        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="images.html">Pictures</a></li>
-        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)" ><a href="#Contact">Contact</a></li>
-        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Order">Order</a></li>    
-        </ul>
-    </section>
-    </header>    
-<body>
+<ul class="navigation">
+<li class="active"><a href=#>Home</a></li>
+<li><a href="creative.html">Creative</a></li>
+<li><a href="professional.html">Professional</a></li>
+<li><a>Contact</a></li>
+</ul>
+</header> 
+<body id="top">
+
+<div class="welcomeText">
+<p>Hi! Thanks for visiting my page. If you ended up here by accident, don't worry -- <a href="https://www.google.com" target=_blank>here</a>
+	is a link to Google. If you are here on purpose, allow me to introduce myself. My name is Stewart Zellars and I am a second-year Masters student in Statistics
+ at the <a href="https://www.umich.edu" target="_blank" class="livepreview" data-position="bottom">University of Michigan</a>. In addition to being passionate about data science, I love photography, videography, and graphic design. On this site, I have included pages dedicated to my hobbies as well as links to academic and professional related documents. Also, Go Dawgs!</p>
+</div>
+
+<div class="backgroundImage">
+</div>
+
 <footer>
-    <section class="NavigationBar">
-        <ul>
-        <li class="active" onmouseover="enlarge(this)" onmouseout="normalsize(this)"onmouseout="normalsize(this)"><a href="index.html">Home</a></li>
-        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="images.html">Pictures</a></li>
-        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)" ><a href="#Contact">Contact</a></li>
-        <li onmouseover="enlarge(this)" onmouseout="normalsize(this)"><a href="#Order">Order</a></li>    
-        </ul>
-    </section>
-    </footer>  
-</body>
+<div class="footerBackground footerBackgroundhome"></div>
+<a href="https://twitter.com/juststewit" class="social social-twitter-dreamstale71" aria-label="Twitter Link"></a>
+<a href="https://www.linkedin.com/in/stewartzellars" class="social social-linkedin-dreamstale45" aria-label="Linkedin"></a>
+<a href="mailto:szellars@umich.edu?subject=Hey%20Stewart" class="social social-mail-dreamstale47" aria-label="Mail Link"></a>
 
-<script type="text/javascript">    
-function swap(image) {             
-    var imagesrc=image.getAttribute("src");
-    document.getElementById("large_picture").style.backgroundImage = "url('"+ imagesrc + "')"; 
-    document.getElementById('large_picture_content').innerHTML = image.alt;
-    document.getElementById('large_picture').style.border="0px black dashed";
-    }
-function normDiv(){
-        document.getElementById('large_picture').style.backgroundImage ="";
-        document.getElementById('large_picture_content').innerHTML='';
-        document.getElementById('large_picture').style.border="5px dashed black";
-    }
-function enlarge(this_text){
-    this_text.style.fontSize="120%";
-    this_text.style.backgroundColor="grey";
-}
-function normalsize(this_text){
-    this_text.style.fontSize="100%";
-    this_text.style.backgroundColor="";
+</footer>
+<div class="backToTop">
+	<p>Back to top</p>
+</div>
+</html>
 
-}
-</script>
-    
-</html> 
