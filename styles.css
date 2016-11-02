@@ -5,11 +5,47 @@ html {
 }
 .backgroundImage{
 	background: url('http://www.sportsonearth.com/assets/images/7/5/2/56406752/cuts/SanfordStadium_aoxgedth_yk40qyhr.jpg');
-	background-size:cover;
-	display:block;
-	height:900px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display:flex;
+	display: -webkit-flex;
+	position:relative;
+	height:300px;
 	width:100%;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	justify-content: center;
+	-webkit-justify-content:center;
+	
 }
+.backgroundImage2{
+	background-color:black;
+	height:108px;
+	width:205px;
+	opacity:.5;
+	justify-content: center;
+	-webkit-justify-content:center;
+	display:flex;
+	display: -webkit-flex;
+
+}
+
+.centeredText{
+		z-index:1;
+
+}
+.backgroundImage2 > .centeredText{
+	color:white;
+	font-size:8rem;
+	transform: translate(-50%,-50%) 
+}
+
+.backgroundImage > .backgroundImage2{
+	
+	margin-bottom:0px;
+}
+
+
 
 .welcomeText{
 
@@ -114,15 +150,6 @@ html {
 
 
 
-.sidebar{
-	align-self:flex-start;
-	-webkit-align-self:flex-start;
-	width:1000px;
-	height:1000px;
-	background: grey;
-	
-	
-}
 .professionalDocuments{
 	
    display: -webkit-flex;
@@ -514,5 +541,23 @@ background:gray;
 .resumeLink{
 	display:initial;
 }
+
+
+.backgroundImage{
+	background: url('http://www.sportsonearth.com/assets/images/7/5/2/56406752/cuts/SanfordStadium_aoxgedth_yk40qyhr.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display:flex;
+	display: -webkit-flex;
+	position:relative;
+	height:300px;
+	width:100%;
+	-webkit-align-items: center;
+	align-items:center;
+	justify-content: center;
+	-webkit-justify-content:center;
+	
+}
+
 
 }
