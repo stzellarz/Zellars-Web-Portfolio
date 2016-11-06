@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Stewart's Welcome Page</title>
-    <link rel=stylesheet href="styles.css" type='text/css'>
+    <link rel="stylesheet" href="styles/styles.css" type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" >
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
             
@@ -11,6 +11,8 @@
                 $(".livepreview").livePreview();
             });
         </script>
+ 
+
 </head>      
 <header>
 <body class="contactPage">
@@ -25,10 +27,22 @@
 <h2>Let's link!</h2>
 </div>
 <div class="contactImages">
-<a href="https://twitter.com/juststewit"><img src="images/twitter_logo.psd"alt="text"></a>
-<a href="https://www.linkedin.com/in/stewartzellars"><img src="images/linkedin_logo.psd"alt="text"></a>
-<a href="mailto:szellars@umich.edu?subject=Hey%20Stewart"><img src="images/mail_logo.psd"alt="text"></a>
+<a href="https://twitter.com/juststewit"><img src="images/twitter_logo.jpg"alt="text"></a>
+<a href="https://www.linkedin.com/in/stewartzellars"><img src="images/linkedin_logo.jpg"alt="text"></a>
+<a href="mailto:szellars@umich.edu?subject=Hey%20Stewart"><img src="images/mail_logo.jpg"alt="text"></a>
 </div>
+
+<div class="contactText">
+<p>Thanks for visiting my page. I hope you enjoyed my website. If you're interested in having a website designed, a video edited, or a dataset analyzed, please connect with me using any of the above links. I look forward to connecting with you and I hope that we can talk more in the future. I've had a blast creating this website and I can't wait to keep updating it. Until then, enjoy the site on your mobile device, tablet, or laptop. Go Dawgs & Go Blue!
+</p>
+<p> This website was last modified on: <span id="demo"></span></p>
+
+</div>
+
+<script>
+    var x = Date(document.lastModified);
+    document.getElementById("demo").innerHTML = x;
+</script>
 
 </body>
 </html>
