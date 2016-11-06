@@ -9,14 +9,20 @@ html {
 	background-repeat: no-repeat;
 	display:flex;
 	display: -webkit-flex;
+	  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	position:relative;
 	height:300px;
 	width:100%;
-	-webkit-align-items: flex-end;
 	align-items: flex-end;
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
 	justify-content: center;
 	-webkit-justify-content:center;
-	
+	-moz-justify-content:center;
+
 }
 .backgroundImage2{
 	background-color:black;
@@ -25,19 +31,33 @@ html {
 	opacity:.5;
 	justify-content: center;
 	-webkit-justify-content:center;
+	-moz-justify-content:center;
 	display:flex;
 	display: -webkit-flex;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 
 }
 
 .centeredText{
 		z-index:1;
+	display:flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  	justify-content: center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
 
 }
 .backgroundImage2 > .centeredText{
 	color:white;
 	font-size:8rem;
-	transform: translate(-50%,-50%) 
+
 }
 
 .backgroundImage > .backgroundImage2{
@@ -62,9 +82,37 @@ html {
   text-align: center;
   -webkit-flex-direction: row ;
   flex-direction: row ;
+    -webkit-flex-direction: row ;
+
   position:relative;
 }
+
+
+
+.contactText{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow:column;
+  -webkit-flex-flow:column;
+  -webkit-justify-content:center; /* Safari */
+   justify-content:center;
+
+  text-align: center;
+  -webkit-flex-direction: column ;
+  flex-direction: column ;
+
+  position:relative;
+}
+
+
 .videoWrapper {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display:-webkit-flex; /*Safari*/
 	display:flex;
 	-webkit-flex-wrap: wrap; /* Safari */
@@ -142,10 +190,9 @@ html {
   -webkit-flex-flow:row;
   -webkit-justify-content:center; /* Safari */
    justify-content:center;
-
-  
   -webkit-flex-direction: row wrap;
   flex-direction: row wrap;
+ text-align: center;
 }
 
 
@@ -202,8 +249,11 @@ footer a{
 	height:3rem;
 	width:3rem;
 	margin:0 auto;
+	
 
 }
+
+
 .social {
 	background-image: url("images/spritesheet.png");
     background-repeat: no-repeat;
@@ -483,6 +533,87 @@ width:15%;
 }
 /* Flex item */
 
+/*Contact Images*/
+
+.contactImages{
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-justify-content:space-around;
+  flex-flow: row wrap;
+  -webkit-flex-flow:row ;
+  -webkit-align-items:right;
+  align-items: right;
+
+}
+
+.contactImages a{
+	width:100%;
+	
+}
+
+
+
+.contactPage img{
+	width:100%;
+	  -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+      transition: all 1s ease;
+
+}
+
+
+.contactPage img:hover{
+	  -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+
+}
+
+
+
+
+
+.ImageText{
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-justify-content:space-around;
+  flex-flow: row wrap;
+  -webkit-flex-flow:row ;
+  -webkit-align-items:right;
+  align-items: right;
+
+}
+
+.smallerImages{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-justify-content:space-around;
+  flex-flow: row wrap;
+  -webkit-flex-flow:row ;
+  -webkit-align-items:center;
+  align-items: center;
+-webkit-justify-content:space-around;
+  justify-content: space-around;
+
+  }
 /*UL has left padding by default */
 
 @media all and (max-width: 800px) {
@@ -500,7 +631,7 @@ width:15%;
     
   }
    
-  .navigation a:hover{
+.navigation a:hover{
 	  background:black;
 }
 .zellarsResume{
@@ -508,6 +639,25 @@ width:15%;
 }
 .resumeLink{
 	display:initial;
+}
+
+.contactPage img{
+	width:100%;
+	  -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+      transition: all 1s ease;
+
+}
+
+
+.contactPage img:hover{
+	  -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+
 }
 
 }
@@ -557,7 +707,56 @@ background:gray;
 	justify-content: center;
 	-webkit-justify-content:center;
 	
+	}
+.contactImages{
+	
+display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-justify-content:space-around;
+  flex-flow: column wrap;
+  -webkit-flex-flow:column wrap;
+  align-items: middle;
+  -webkit-align-items:middle;
+  justify-content: center;
+  -webkit-justify-content:center;
 }
+
+
+
+.contactImages a{
+	display:inline-block;
+	width:30%;
+	margin: 0 auto;
+}
+
+
+
+.contactPage img{
+	  -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+       transition: all 1s ease;
+
+
+}
+
+
+.contactPage img:hover{
+	  -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+
+}
+
+
+
+
 
 
 }
